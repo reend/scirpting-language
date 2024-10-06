@@ -6,18 +6,18 @@ This project is a TypeScript-based interpreter that processes scripts using a cu
 
 ## Project Structure
 
-- **src/**: Contains the TypeScript source files.
+- **src**: Contains the TypeScript source files.
   - **main.ts**: The main entry point of the application. It handles file reading and initiates the script evaluation process.
-  - **frontend/**: Contains the components responsible for parsing and tokenizing the scripts.
-    - **ast/**: Defines the structure of the Abstract Syntax Tree (AST) nodes.
-    - **parser/**: Contains the logic for parsing scripts.
+  - **frontend**: Contains the components responsible for parsing and tokenizing the scripts.
+    - **ast**: Defines the structure of the Abstract Syntax Tree (AST) nodes.
+    - **parser**: Contains the logic for parsing scripts.
       - **index.ts**: The main parser file that converts tokens into an AST.
-    - **lexer/**: Contains the logic for lexical analysis.
+    - **lexer**: Contains the logic for lexical analysis.
       - **index.ts**: Breaks down the input script into tokens.
-  - **runtime/**: Contains the core logic for interpreting scripts.
+  - **runtime**: Contains the core logic for interpreting scripts.
     - **interpreter.ts**: Implements the `evaluate` function that processes the AST.
     - **environment.ts**: Manages variable scopes and environments during script execution.
-    - **eval/**: Contains evaluation logic for different types of statements and expressions.
+    - **eval**: Contains evaluation logic for different types of statements and expressions.
       - **statements.ts**: Evaluates program and variable/function declaration statements.
       - **expressions.ts**: Evaluates expressions like binary operations, assignments, and function calls.
 - **dist/**: Contains the compiled JavaScript files after running the TypeScript compiler.
